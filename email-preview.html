@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicado de Evento - Venture Truck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        #copyButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #FAA806 0%, #ffb82e 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(250, 168, 6, 0.4);
+            z-index: 9999;
+            transition: all 0.3s ease;
+        }
+        #copyButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(250, 168, 6, 0.6);
+        }
+        #copyButton:active {
+            transform: translateY(0);
+        }
+        .success-message {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: #00c851;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 200, 81, 0.4);
+            z-index: 9999;
+            animation: slideIn 0.3s ease;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Roboto', Arial, sans-serif; background-color: #f4f4f4;">
+    
+    <button id="copyButton" onclick="copyEmail()">📧 Copiar Email para Gmail</button>
+    
+    <div id="emailContent">
+    <table role="presentation" style="width: 100%; border-collapse: collapse; background-color: #f4f4f4;">
+        <tr>
+            <td align="center" style="padding: 40px 20px;">
+                <table role="presentation" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #092b44 0%, #0a3d62 50%, #0e4d7a 100%); padding: 40px 30px; text-align: center; border-radius: 8px 8px 0 0;">
+                            <div style="background-color: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 12px; display: inline-block; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                                <img src="270850336_450902776610579_1825779971933058067_n.jpg" alt="Venture Truck" style="max-width: 180px; height: auto; display: block;">
+                            </div>
+                            <h1 style="margin: 0; color: #FAA806; font-size: 28px; font-weight: bold; letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">VENTURE TRUCK</h1>
+                        </td>
+                    </tr>
+                    
+                    <!-- Title -->
+                    <tr>
+                        <td style="padding: 30px 30px 20px 30px; text-align: center;">
+                            <h2 style="margin: 0; color: #0a3d62; font-size: 24px; font-weight: bold;">Novo Comunicado de Evento</h2>
+                            <p style="margin: 10px 0 0 0; color: #666666; font-size: 14px;">Recebido em 11/02/2026 às 14:30</p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Dados Pessoais Section -->
+                    <tr>
+                        <td style="padding: 0 30px;">
+                            <div style="background-color: #f8f9fa; border-left: 4px solid #FAA806; padding: 20px; margin-bottom: 20px; border-radius: 4px;">
+                                <h3 style="margin: 0 0 15px 0; color: #0a3d62; font-size: 18px; font-weight: bold;">👤 Dados Pessoais</h3>
+                                
+                                <table role="presentation" style="width: 100%; border-collapse: collapse;">
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px; width: 40%;"><strong>Tipo de Evento:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Colisão</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Solicitação de Reparo:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Associado</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Nome do Associado:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">João da Silva Santos</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Data de Nascimento:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">15/03/1985</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Condutor:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Próprio associado</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Tipo de Documento:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">CPF</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Documento:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">123.456.789-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Endereço:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Rua das Flores, 123 - Centro, São Paulo/SP</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Telefone:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">(11) 98765-4321</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Email:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">joao.silva@email.com</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Dados do Veículo Section -->
+                    <tr>
+                        <td style="padding: 0 30px;">
+                            <div style="background-color: #f8f9fa; border-left: 4px solid #0a3d62; padding: 20px; margin-bottom: 20px; border-radius: 4px;">
+                                <h3 style="margin: 0 0 15px 0; color: #0a3d62; font-size: 18px; font-weight: bold;">🚗 Dados do Veículo</h3>
+                                
+                                <table role="presentation" style="width: 100%; border-collapse: collapse;">
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px; width: 40%;"><strong>Placa:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">ABC-1234</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Marca:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Toyota</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Modelo:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Corolla XEi</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Ano:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Cor:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Prata</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Chassi:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">9BWSU19F08R123456</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Relato dos Fatos Section -->
+                    <tr>
+                        <td style="padding: 0 30px;">
+                            <div style="background-color: #f8f9fa; border-left: 4px solid #FAA806; padding: 20px; margin-bottom: 20px; border-radius: 4px;">
+                                <h3 style="margin: 0 0 15px 0; color: #0a3d62; font-size: 18px; font-weight: bold;">📝 Relato dos Fatos</h3>
+                                
+                                <table role="presentation" style="width: 100%; border-collapse: collapse;">
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px; width: 40%;"><strong>Data do Evento:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">10/02/2026 às 16:45</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Local do Evento:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Avenida Paulista, 1000 - Bela Vista, São Paulo/SP</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px; vertical-align: top;"><strong>Relato Detalhado:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px; line-height: 1.6;">Estava transitando pela Avenida Paulista quando um veículo que vinha pela direita não respeitou o sinal vermelho e colidiu com a lateral traseira direita do meu veículo. O impacto causou danos na porta traseira e no para-lama. O condutor do outro veículo parou e aguardamos a perícia.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #333333; font-size: 14px;"><strong>Há Testemunhas:</strong></td>
+                                        <td style="padding: 8px 0; color: #666666; font-size: 14px;">Sim</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Fotos do Veículo Section -->
+                    <tr>
+                        <td style="padding: 0 30px;">
+                            <div style="background-color: #f8f9fa; border-left: 4px solid #0a3d62; padding: 20px; margin-bottom: 20px; border-radius: 4px;">
+                                <h3 style="margin: 0 0 15px 0; color: #0a3d62; font-size: 18px; font-weight: bold;">📷 Fotos do Veículo</h3>
+                                <p style="margin: 0 0 20px 0; color: #666666; font-size: 14px;">Quantidade de fotos: 3 arquivos anexados</p>
+                                <div style="margin-top: 15px;">
+                                    <p style="margin: 0; color: #666666; font-size: 13px; font-style: italic;">As fotos foram anexadas ao comunicado e estão disponíveis para análise.</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #0a3d62; padding: 30px; text-align: center; border-radius: 0 0 8px 8px;">
+                            <p style="margin: 0; color: #ffffff; font-size: 14px; line-height: 1.6;">
+                                <strong>VENTURE TRUCK</strong><br>
+                                Este é um comunicado automático. Por favor, não responda este email.
+                            </p>
+                            <p style="margin: 15px 0 0 0; color: #FAA806; font-size: 12px;">
+                                © 2026 Venture Truck. Todos os direitos reservados.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+    
+    <script>
+        function copyEmail() {
+            const emailContent = document.getElementById('emailContent');
+            
+            // Criar um range e selecionar o conteúdo
+            const range = document.createRange();
+            range.selectNodeContents(emailContent);
+            
+            // Limpar seleção anterior e adicionar nova
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            
+            try {
+                // Copiar para clipboard
+                document.execCommand('copy');
+                
+                // Mostrar mensagem de sucesso
+                showSuccessMessage();
+                
+                // Limpar seleção
+                selection.removeAllRanges();
+            } catch (err) {
+                alert('Erro ao copiar. Use Ctrl+A e Ctrl+C manualmente.');
+            }
+        }
+        
+        function showSuccessMessage() {
+            const message = document.createElement('div');
+            message.className = 'success-message';
+            message.textContent = '✓ Email copiado! Cole no Gmail agora';
+            document.body.appendChild(message);
+            
+            setTimeout(() => {
+                message.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
